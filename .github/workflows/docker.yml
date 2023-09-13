@@ -63,6 +63,7 @@ jobs:
         id: metadata
         uses: docker/metadata-action@v4
         with:
+          context: git
           flavor: |
             # Disable latest tag
             latest=false
