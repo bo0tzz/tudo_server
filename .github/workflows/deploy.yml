@@ -10,8 +10,9 @@ concurrency:
   cancel-in-progress: true
 
 permissions:
-  packages: write
-  
+  packages: write # Required for calling the docker workflow
+  contents: write # Required for creating releases
+
 jobs:
   build:
     timeout-minutes: 10
